@@ -26,7 +26,7 @@ Rust ensures (well) _defined behavior_ at all times.
 
 - evaluation (execution) either
   - succeeds (values and references always _valid_)
-  - fails with a panic (which is still _safe_ as "nothing bad" can happened)
+  - fails with a `panic` (which is still _safe_ as it stops _before_ anything _bad_ happens, thus prevents programs to run with _undefined behavior_)
 
 ---
 
@@ -34,7 +34,7 @@ Rust ensures (well) _defined behavior_ at all times.
 
 The Rust compiler will either:
 
-- prove defined behavior at compile time, or
+- prove _defined behavior_ at compile time, or
 - generate code that at run-time ensures _defined behavior_
 
 ---
@@ -62,3 +62,4 @@ Rust may run into _undefined behavior_ in case of _stack overflow_.
 - Additional tooling to prove _defined behavior_
   - SymEx, static analysis by symbolic execution
   - Hippomenes RISC-V Real-Time Security, run-time verification
+- Our ultimately goal: systems reliable, robust, safe and secure _by construction_

@@ -6,7 +6,7 @@ struct Point {
 }
 
 #[test]
-fn copy_a_value() {
+fn borrow_a_value() {
     let point = Point { x: 1, y: 2 };
     println!("point {:?}", point);
 

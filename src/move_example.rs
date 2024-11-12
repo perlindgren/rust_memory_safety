@@ -37,5 +37,5 @@ fn move_a_value_as_argument() {
     some_function(point);
 
     // let us try to access point
-    //println!("point {:?}", point);
+    // println!("point {:?}", point);
 }
