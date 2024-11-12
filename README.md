@@ -58,8 +58,9 @@ Rust may run into _undefined behavior_ in case of _stack overflow_.
 ## RTIC Lab will fix it
 
 - The RTIC framework ensures safe sharing of mutable resources
-- All hardware access boils down to machine generated code based on vendors specifications.
+- All hardware access boils down to machine generated code based on vendors specifications
 - Additional tooling to prove _defined behavior_
   - SymEx, static analysis by symbolic execution
   - Hippomenes RISC-V Real-Time Security, run-time verification
-- Our ultimately goal: systems reliable, robust, safe and secure _by construction_
+- Our ultimately goal: methods and tools to design (embedded) systems being
+  - reliable, robust, safe and secure _by construction_
